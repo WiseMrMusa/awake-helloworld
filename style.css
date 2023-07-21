@@ -1,0 +1,102 @@
+:root{
+    --pry-color : #0bce5a;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Matter SQ';
+}
+
+header {
+    background-color: black;
+    color: white;
+
+
+    padding: 20px 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    font-size: 14px;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: var(--pry-color);
+    color: white;
+
+    line-height: 24px;
+    padding: 8px 24px;
+
+    border: 0px;
+    border-radius: 8px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    padding: 8px 12px;
+    line-height: 24px;
+
+    height: 200px;
+}
+
+.dropdown_menu {
+    display: none;
+
+    position: absolute;
+    top: 40px;
+
+    background-color: white;
+    color: black;
+
+    padding: 8px 0px;
+    border-radius: 8px;
+
+    width: max-content;
+    overflow: hidden;
+
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu> div {
+    padding: 8px 12px;
+
+}
+
+.dropdown_menu > div > h2 {
+    font-size: 16px;
+    margin: 0px;
+}
+.dropdown_menu > div > p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+
+.dropdown_menu > div:hover {
+    background-color: #eeeeee;
+}
